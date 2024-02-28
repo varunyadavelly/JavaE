@@ -1,0 +1,101 @@
+Types of Classes:
+
+1. Regular classes:
+==================
+Regular classes are the most common type of classes used in Java for defining objects and their behavior.
+
+
+
+2. Abstract Classes:
+===================
+An abstract class in Java is a class that cannot be instantiated on its own and is meant to be subclassed. 
+It serves as a blueprint for other classes, providing common methods and fields that subclasses can use or 
+override. Abstract classes can contain both abstract methods (methods without a body) 
+and concrete methods (methods with a body).
+
+Cannot be Instantiated: You cannot create objects directly from an abstract class using the 'new' keyword. 
+Instead, you must subclass the abstract class and provide implementations for its abstract methods.
+
+May Contain Abstract Methods: Abstract classes can have abstract methods, which are declared without a body 
+and are meant to be implemented by subclasses. Subclasses must provide concrete implementations for all 
+abstract methods of the abstract class.
+
+May Contain Concrete Methods: Abstract classes can also have concrete methods, which have a body and 
+provide default behavior that can be inherited by subclasses. Subclasses can override concrete methods if 
+necessary.
+
+May Contain Fields and Constructors: Abstract classes can have fields, constructors, and other members just 
+like regular classes.
+
+
+ex:  abstract class Shape {
+    // Abstract method
+    public abstract double area();
+
+    // Concrete method
+    public void display() {
+        System.out.println("This is a shape.");
+    }
+}
+
+3. Final Classes:
+=================
+
+In Java, a final class is a class that cannot be subclassed or extended. Once a class is declared as final, 
+it cannot be extended by other classes. This means that no other class can inherit from a final class. 
+Final classes are typically used when the design intentionally prohibits extension of a class for 
+security, immutability, or efficiency reasons.
+
+Here are some key characteristics of final classes:
+
+Cannot be Subclassed: Final classes cannot have subclasses. Any attempt to extend a final class will result 
+in a compilation error.
+
+Can Be Instantiated: Final classes can still be instantiated directly, just like any other class.
+
+May Contain Fields, Methods, and Constructors: Final classes can contain fields, methods, constructors, and 
+other members just like regular classes.
+
+Use Cases: Final classes are often used for utility classes (e.g., java.lang.Math), immutable classes 
+(e.g., java.lang.String), or classes where inheritance is not desirable for design reasons.
+
+
+
+5. POJO Class: Plain Old Java Object
+=================================
+
+It is a Java class that encapsulates only data and has no additional functionality or behavior, 
+such as inheritance, interfaces, or annotations. 
+POJO classes are typically used to represent simple data structures or entities in an application, 
+and they adhere to the basic principles of object-oriented programming.
+
+
+
+
+6. Concrete classes:
+====================
+in Java are classes that can be instantiated directly, unlike abstract classes. They provide implementations 
+for all their methods, including any abstract methods inherited from abstract classes or interfaces. Concrete 
+classes can be instantiated using the new keyword, and they can be used to create objects.
+
+7. Anonymous classes:
+=====================
+
+In Java, an anonymous class is a local class without a name. It allows you to create a class instance 
+on-the-fly, usually for implementing a single interface or extending a single class, without explicitly 
+declaring a new named class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
